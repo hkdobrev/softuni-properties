@@ -38,6 +38,13 @@ routesConfig = ($routeProvider) ->
       resolve:
         estate: estateResolver
 
+    .when '/estates/:estateId/delete',
+      templateUrl: 'views/estate-delete.html'
+      controller: 'EstateDeleteCtrl'
+      controllerAs: 'EstateCtrl'
+      resolve:
+        estate: estateResolver
+
     .otherwise
       redirectTo: '/'
 
