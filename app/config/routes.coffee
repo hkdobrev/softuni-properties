@@ -1,3 +1,9 @@
+estateResolver = ($route, Estate) ->
+  estate = Estate.find $route.current.params.estateId
+  return estate
+
+estateResolver.$inejct = ['$route', 'Estate']
+
 routesConfig = ($routeProvider) ->
   $routeProvider
     .when '/',
@@ -24,6 +30,13 @@ routesConfig = ($routeProvider) ->
       templateUrl: 'views/estate.html'
       controller: 'EstateNewCtrl'
       controllerAs: 'EstateCtrl'
+
+    .when '/estates/:estateId/edit',
+      templateUrl: 'views/estate.html'
+      controller: 'EstateEditCtrl'
+      controllerAs: 'EstateCtrl'
+      resolve:
+        estate: estateResolver
 
     .otherwise
       redirectTo: '/'

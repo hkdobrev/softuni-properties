@@ -15,6 +15,18 @@
               Price: {{estate.price}}
             </p>
           </div>
+          <div
+           ng-if="estate.ACL[auth.currentUser.objectId].write"
+           class="panel-footer clearfix">
+            <div class="pull-right">
+              <a
+               href="/estates/{{estate.objectId}}/edit"
+               class="btn btn-info">
+                <span class="glyphicon glyphicon-edit"></span>
+                Edit
+              </a>
+            </div>
+          </div>
         </div>
       </li>
     </ol>
