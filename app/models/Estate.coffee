@@ -1,6 +1,6 @@
 EstateModelProvider = (ParseModel) ->
   class Estate extends ParseModel
-    @configure "Estate", "name"
+    @configure "Estate", "name", "price", "category", "ACL"
 
 EstateModelProvider.$inect = ['ParseModel']
 

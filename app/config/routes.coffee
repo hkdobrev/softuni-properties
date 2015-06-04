@@ -20,6 +20,11 @@ routesConfig = ($routeProvider) ->
       controller: 'EstatesCtrl'
       controllerAs: 'EstatesCtrl'
 
+    .when '/estates/new',
+      templateUrl: 'views/estate.html'
+      controller: 'EstateNewCtrl'
+      controllerAs: 'EstateCtrl'
+
     .otherwise
       redirectTo: '/'
 
