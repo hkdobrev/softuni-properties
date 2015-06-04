@@ -7,6 +7,12 @@ redirectToLoginConfiguration = ($rootScope, $location, ParseAuth) ->
       event.preventDefault()
       $location.path '/login'
 
+    if ParseAuth.currentUser and
+    ($location.path() is '/login' or
+    $location.path() is '/register')
+      event.preventDefault()
+      $location.path '/'
+
 redirectToLoginConfiguration.$inject = ['$rootScope', '$location', 'ParseAuth']
 
 angular
