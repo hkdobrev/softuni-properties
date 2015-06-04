@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="properties" ng-strict-di>
+<head>
+  <meta charset="utf-8">
+  <title>SoftUni Properties Management by Haralan Dobrev</title>
+  <base href="/">
+  <style>.ng-cloak {display: none}</style>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+</head>
+<body class="ng-cloak">
+  <!-- <div ng-if="isLoggedIn" ng-include="'includes/header.html'"></div> -->
+  <div class="container">
+    <ng-view></ng-view>
+  </div>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="node_modules/angular-resource/angular-resource.js"></script>
+  <script src="node_modules/angular-parse/angular-parse.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/config/html5Mode.js"></script>
+  <script src="js/config/routes.js"></script>
+  <script src="js/controllers/HomeCtrl.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
