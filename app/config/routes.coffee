@@ -15,6 +15,11 @@ routesConfig = ($routeProvider) ->
       controller: 'RegisterCtrl'
       controllerAs: 'RegisterCtrl'
 
+    .when '/estates',
+      templateUrl: 'views/estates.html'
+      controller: 'EstatesCtrl'
+      controllerAs: 'EstatesCtrl'
+
     .otherwise
       redirectTo: '/'
 
