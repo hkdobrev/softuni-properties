@@ -1,0 +1,31 @@
+{
+  "name": "softuni-properties",
+  "description": "Softuni.bg university project. A real-estate app on AngularJS.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Haralan Dobrev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hkdobrev/softuni-properties.git"
+  },
+  "dependencies": {
+    "angular": "^1.4.0",
+    "angular-parse": "file:../../../../var/folders/3_/2_zg3hyx5tdfn_xjnv7z83mr0000gn/T/npm-2136-3daf6daf/git-cache-dcce4f257333/fac11b2c7d29020c4ddabf2504841f968be25bd0",
+    "angular-resource": "^1.4.0",
+    "angular-route": "^1.4.0",
+    "bootstrap": "^3.3.4",
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.3",
+    "connect-modrewrite": "^0.8.1",
+    "grunt": "^0.4.5",
+    "grunt-coffeelint": "0.0.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
