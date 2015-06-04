@@ -1,0 +1,29 @@
+<div class="row" style="margin-top: 100px">
+    <form
+     ng-submit="LogInCtrl.logIn(user)"
+     method="POST"
+     class="col-xs-12 col-sm-push-3 col-sm-6">
+        <div class="form-group">
+            <label for="username" class="col-xs-3">Username</label>
+            <input
+             id="username"
+             type="text"
+             name="username"
+             ng-model="user.username"
+             required>
+        </div>
+        <div class="form-group">
+            <label for="password" class="col-xs-3">Password</label>
+            <input
+             id="password"
+             type="password"
+             name="password"
+             ng-model="user.password"
+             required>
+        </div>
+        <div ng-if="LogInCtrl.errorMessage">
+          <p style="color: red">{{LogInCtrl.errorMessage}}</p>
+        </div>
+        <button type="submit" class="btn btn-default">Log in</button>
+    </form>
+</div>
