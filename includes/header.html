@@ -27,6 +27,8 @@
         <li><a href="/">Home</a></li>
         <li><a href="/estates">Estates</a></li>
         <li><a href="/estates/new">Add Estate</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" ng-if="auth.currentUser">
         <li><a href="/logout" ng-click="auth.logout()">Log out</a></li>
       </ul>
     </div>
